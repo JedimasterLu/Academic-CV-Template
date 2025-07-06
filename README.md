@@ -4,7 +4,7 @@ A typst template for graduate school applications with modern looking.
 
 ## Demo
 
-![Demo](assets/Figure/thumbnail.png)
+![Demo](assets/thumbnail.png)
 
 ## Tutorial
 
