@@ -31,7 +31,7 @@
   show enum: set block(spacing: 0.8em)
 
   // Main body.
-  set par(justify: true, leading: 0.5em, spacing: 0.5em)
+  set par(justify: true, leading: 0.6em)
   set text(font: sans-font, size: 11pt)
   [#body]
 }

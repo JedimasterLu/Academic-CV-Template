@@ -66,7 +66,6 @@
   #block(spacing: 1.2em, width: 100%-1em)[
   #quartag1([Bachelor of Engineering in Material Science and Engineering], [Shanghai Jiao Tong University],[Undergraduate program],[Sep 2021 – Expected Jun 2025])
   #align(left)[
-    - Student of _Hsu Tzuyao_ Honor Class in School of Material Science and Engineering (SMSE)
     - GPA: ...
     - Relevant Courses: ...
   ]
