@@ -10,28 +10,6 @@
 
 #let theme-color = rgb("#004080")
 
-#let quartag(title, place, note, time) = {
-  block(spacing: 0.8em)[
-  #grid(
-    columns: (auto, 1fr),
-    column-gutter: 1em,
-    row-gutter: 0.5em,
-    [#align(left)[* #title *]],[#align(right)[_ #place _]],
-    [#align(left)[_ #note _]],[#align(right)[_ #time _]]
-  )]
-}
-
-#let quartag1(title, place, note, time) = {
-  block(spacing: 0.8em)[
-  #grid(
-    columns: (auto, 1fr),
-    column-gutter: 1em,
-    row-gutter: 0.5em,
-    [#align(left)[* #title *]],[#align(right)[_ #time _]],
-    [#align(left)[_ #note _]],[#align(right)[_ #place _]]
-  )]
-}
-
 #align(right)[
   #block(above: 0em, below: 1em, width: 100%-1em)[
     #grid(
@@ -48,12 +26,12 @@
               columns: (auto,1fr),
               row-gutter: 0.2em,
               column-gutter: 2.5em,
-              [#box(image("phone.svg",height: 1em),baseline: 2pt) +86 xxxxxxxxxxx],
-              [#box(image("wechat.svg",height: 1em),baseline: 2pt) xxxxxx],
-              [#box(image("email-outline.svg",height: 1em),baseline: 2pt) #link("name@sjtu.edu.cn")],
-              [#box(image("website.svg",height: 1em),baseline: 2pt) #link("https://mywebsite.github.io")[Personal Website]]
+              [#box(image("Assets/Figure/phone.svg",height: 1em),baseline: 2pt) +86 xxxxxxxxxxx],
+              [#box(image("Assets/Figure/wechat.svg",height: 1em),baseline: 2pt) xxxxxx],
+              [#box(image("Assets/Figure/email-outline.svg",height: 1em),baseline: 2pt) #link("name@sjtu.edu.cn")],
+              [#box(image("Assets/Figure/website.svg",height: 1em),baseline: 2pt) #link("https://mywebsite.github.io")[Personal Website]]
             )]],
-          [#align(left)[#box(image("map-marker.svg",height: 1em),baseline: 2pt) 800 Dongchuan Road, Minghang District, Shanghai]]
+          [#align(left)[#box(image("Assets/Figure/map-marker.svg",height: 1em),baseline: 2pt) 800 Dongchuan Road, Minghang District, Shanghai]]
         )]
       ]
     )
@@ -64,7 +42,7 @@
 
 #align(right)[
   #block(spacing: 1.2em, width: 100%-1em)[
-  #quartag1([Bachelor of Engineering in Material Science and Engineering], [Shanghai Jiao Tong University],[Undergraduate program],[Sep 2021 – Expected Jun 2025])
+  #quartag([Bachelor of Engineering in Material Science and Engineering], [Shanghai Jiao Tong University],[Undergraduate program],[Sep 2021 – Expected Jun 2025])
   #align(left)[
     - GPA: ...
     - Relevant Courses: ...
@@ -89,7 +67,7 @@
 
   #block(spacing: 1.2em, width: 100%-1em)[
   
-  #quartag1([My CV template], [Shanghai], [A CV template for graduate application], [Jun 2023 – Present])
+  #quartag([My CV template], [Shanghai], [A CV template for graduate application], [Jun 2023 – Present])
 
   #align(left)[
     - Description of the project.
@@ -100,7 +78,7 @@
 
 #align(right)[
   #block(spacing: 1.2em, width: 100%-1em)[
-  #quartag1([Internship], [Zhejiang, China],[xxx Co., Ltd.],[Sep 2024])
+  #quartag([Internship], [Zhejiang, China],[xxx Co., Ltd.],[Sep 2024])
   #align(left)[
     Description
   ]
@@ -126,7 +104,7 @@
 
 #align(right)[
   #block(spacing: 1.2em, width: 100%-1em)[
-  #quartag1([Debating], [SJTU],[Core member of the college debate team],[Sep 2021 – Present])
+  #quartag([Debating], [SJTU],[Core member of the college debate team],[Sep 2021 – Present])
   #align(left)[
     Description
   ]]

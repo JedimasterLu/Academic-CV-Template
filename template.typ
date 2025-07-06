@@ -35,3 +35,14 @@
   set text(font: sans-font, size: 11pt)
   [#body]
 }
+
+#let quartag(title, place, note, time) = {
+  block(spacing: 0.8em)[
+  #grid(
+    columns: (auto, 1fr),
+    column-gutter: 1em,
+    row-gutter: 0.5em,
+    [#align(left)[* #title *]],[#align(right)[_ #time _]],
+    [#align(left)[_ #note _]],[#align(right)[_ #place _]]
+  )]
+}
