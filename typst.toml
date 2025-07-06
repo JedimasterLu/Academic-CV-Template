@@ -15,4 +15,4 @@ repository = "https://github.com/JedimasterLu/Academic-CV-Template"
 [template]
 path = "template"
 entrypoint = "template.typ"
-thumbnail = "thumbnail.png"
+thumbnail = "assets/thumbnail.png"

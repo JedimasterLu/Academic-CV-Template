@@ -67,12 +67,12 @@
                 columns: (auto,1fr),
                 row-gutter: 0.2em,
                 column-gutter: 2.5em,
-                [#box(image("assets/Figure/phone.svg",height: 1em),baseline: 2pt) #phone],
-                [#box(image("assets/Figure/wechat.svg",height: 1em),baseline: 2pt) #wechat],
-                [#box(image("assets/Figure/email-outline.svg",height: 1em),baseline: 2pt) #link(email)],
-                [#box(image("assets/Figure/website.svg",height: 1em),baseline: 2pt) #link(website)[Personal Website]]
+                [#box(image("assets/phone.svg",height: 1em),baseline: 2pt) #phone],
+                [#box(image("assets/wechat.svg",height: 1em),baseline: 2pt) #wechat],
+                [#box(image("assets/email-outline.svg",height: 1em),baseline: 2pt) #link(email)],
+                [#box(image("assets/website.svg",height: 1em),baseline: 2pt) #link(website)[Personal Website]]
               )]],
-            [#align(left)[#box(image("assets/Figure/map-marker.svg",height: 1em),baseline: 2pt) #address]]
+            [#align(left)[#box(image("assets/map-marker.svg",height: 1em),baseline: 2pt) #address]]
           )
         ]]
       )
