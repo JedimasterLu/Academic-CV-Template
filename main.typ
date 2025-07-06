@@ -2,145 +2,101 @@
 
 // Take a look at the file `template.typ` in the file panel
 // to customize this template and discover how it works.
-#show: project.with(
-  title: "My Name",
-  course: "",
-  author: (name: "My Name", email: "name@outlook.com", stuNum: "521000000000"),
+#show: project.with()
+
+#caption(
+  "My Name",
+  "+86 xxxxxxxxxxx",
+  "xxxxxx",
+  "name@sjtu.edu.cn",
+  "https://mywebsite.github.io",
+  "800 Dongchuan Road, Minghang District, Shanghai"
 )
-
-#let theme-color = rgb("#004080")
-
-#align(right)[
-  #block(above: 0em, below: 1em, width: 100%-1em)[
-    #grid(
-      columns: (auto, 1fr),
-      column-gutter: 4em,
-      [#align(left)[#text(size: 40pt, weight: "bold", font: "Lato",style: "italic", fill: theme-color)[My Name]]],
-      [#align(right)[
-        #set text(size: 11pt, weight: "regular", font: "Calibri",style: "normal")
-        #grid(
-          columns: (1fr),
-          row-gutter: 0.2em,
-          [#align(left)[
-            #grid(
-              columns: (auto,1fr),
-              row-gutter: 0.2em,
-              column-gutter: 2.5em,
-              [#box(image("Assets/Figure/phone.svg",height: 1em),baseline: 2pt) +86 xxxxxxxxxxx],
-              [#box(image("Assets/Figure/wechat.svg",height: 1em),baseline: 2pt) xxxxxx],
-              [#box(image("Assets/Figure/email-outline.svg",height: 1em),baseline: 2pt) #link("name@sjtu.edu.cn")],
-              [#box(image("Assets/Figure/website.svg",height: 1em),baseline: 2pt) #link("https://mywebsite.github.io")[Personal Website]]
-            )]],
-          [#align(left)[#box(image("Assets/Figure/map-marker.svg",height: 1em),baseline: 2pt) 800 Dongchuan Road, Minghang District, Shanghai]]
-        )]
-      ]
-    )
-  ]
-]
 
 = Education
 
-#align(right)[
-  #block(spacing: 1.2em, width: 100%-1em)[
-  #quartag([Bachelor of Engineering in Material Science and Engineering], [Shanghai Jiao Tong University],[Undergraduate program],[Sep 2021 – Expected Jun 2025])
-  #align(left)[
+#capcontent_block(
+  [Bachelor of Engineering in Material Science and Engineering],
+  [Shanghai Jiao Tong University],
+  [Undergraduate program],
+  [Sep 2021 – Expected Jun 2025],
+  [
     - GPA: ...
     - Relevant Courses: ...
   ]
-  ]
-]
-
+)
 
 = Selected Publications
 
-#align(right)[
-  #block(spacing: 1.2em, width: 100%-1em)[
-    #align(left)[
-      - xxx
-    ]
-  ]
+#bullet_block()[
+  - xxx
+  - xxx
+]
+
+#text(size: 0.9*fontsize)[
+  #h(1em) Note: \* corresponding author, $dagger$ equal contribution
 ]
 
 = Research and Project Experience
 
-#align(right)[
-
-  #block(spacing: 1.2em, width: 100%-1em)[
-  
-  #quartag([My CV template], [Shanghai], [A CV template for graduate application], [Jun 2023 – Present])
-
-  #align(left)[
-    - Description of the project.
-  ]]
-]
+#capcontent_block(
+  [My CV template],
+  [Shanghai Jiao Tong University],
+  [A CV template for graduate application],
+  [Sep 2023 – Present],
+  [
+    - Description of the research project.
+    - Key contributions and findings.
+  ]
+)
 
 = Relevant Work Experience
 
-#align(right)[
-  #block(spacing: 1.2em, width: 100%-1em)[
-  #quartag([Internship], [Zhejiang, China],[xxx Co., Ltd.],[Sep 2024])
-  #align(left)[
-    Description
+#capcontent_block(
+  [Internship],
+  [Zhejiang, China],
+  [xxx Co., Ltd.],
+  [Sep 2024],
+  [
+    Description of the internship role.
   ]
-  ]
-]
+)
 
 = Awards
 
-#align(right)[
-  #block(spacing: 1.2em, width: 100%-1em)[
-    #align(left)[
-      #grid(
-        columns: (auto,auto,1fr),
-        row-gutter: 0.8em,
-        column-gutter: 2em,
-        [*Scholarship*],[Awarded by Administrative Committee],[#align(right)[2022]],
-      )
-    ]
-  ]
-]
+#tritable_block((
+  ("National Scholarship", "Ministry of Education", "2022"),
+  ("Merit Scholarship", "University Committee", "2021"), 
+  ("Excellence Award", "Academic Department", "2020")
+))
 
 = Extracurricular Activities
 
-#align(right)[
-  #block(spacing: 1.2em, width: 100%-1em)[
-  #quartag([Debating], [SJTU],[Core member of the college debate team],[Sep 2021 – Present])
-  #align(left)[
-    Description
-  ]]
-]
+#capcontent_block(
+  [Debating],
+  [SJTU],
+  [Core member of the college debate team],
+  [Sep 2021 – Present],
+  [
+    Description of the extracurricular activity.
+  ]
+)
 
 = Technical Skills
 
-#align(right)[
-  #block(spacing: 1.2em, width: 100%-1em)[
-    #align(left)[
-      #grid(
-        columns: (auto,1fr),
-        row-gutter: 0.8em,
-        column-gutter: 1em,
-        [*Programming*],[Proficiency in ...],
-        [*Softwares*],[Familiar with ...],
-        [*Characterization*],[Familiar with ...],
-        [*Language Proficiency*],[English (TOEFL ; GRE ), Mandarin (Native speaker).]
-      )
-    ]
-  ]
-]
+#dualtable_block((
+  ("Programming", "Python, C++, MATLAB, SQL"),
+  ("Softwares", "AutoCAD, SolidWorks, OriginLab, ChemOffice"),
+  ("Characterization", "SEM, TEM, XRD, FTIR"),
+  ("Language Proficiency", "English (TOEFL ; GRE ), Mandarin (Native speaker)")
+))
 
 = Soft Skills
 
-#align(right)[
-  #block(spacing: 1.2em, width: 100%-1em)[
-    #align(left)[
-      #grid(
-        columns: (auto,1fr),
-        row-gutter: 0.8em,
-        column-gutter: 2em,
-        [*Volunteering*],[Description]
-      )
-    ]
-  ]
-]
+#dualtable_block((
+  ("Leadership", "Led a team of 5 in a project"),
+  ("Communication", "Effective verbal and written communication skills"),
+  ("Problem Solving", "Analytical thinking and problem-solving abilities")
+))
 
   
